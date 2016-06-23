@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ASZ-jc-gJD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--转场动画-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izu-sP-Hma">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.68060633849999996" green="0.8365743886" blue="0.141638446" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="PUSH"/>
+                                <connections>
+                                    <segue destination="r22-F5-ftr" kind="push" id="lGg-Qf-szs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AA-OJ-hGX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.68060633849999996" green="0.8365743886" blue="0.141638446" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Present"/>
+                                <connections>
+                                    <action selector="present:" destination="BYZ-38-t0r" eventType="touchUpInside" id="88b-XG-oEy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Izu-sP-Hma" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CvH-xS-Wr2"/>
+                            <constraint firstItem="3AA-OJ-hGX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K06-Nj-Qs5"/>
+                            <constraint firstItem="Izu-sP-Hma" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="170" id="VeT-kc-XfX"/>
+                            <constraint firstItem="3AA-OJ-hGX" firstAttribute="top" secondItem="Izu-sP-Hma" secondAttribute="bottom" constant="107" id="fQm-7d-1wP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Izu-sP-Hma"/>
+                                <exclude reference="3AA-OJ-hGX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CvH-xS-Wr2"/>
+                                <exclude reference="VeT-kc-XfX"/>
+                                <exclude reference="K06-Nj-Qs5"/>
+                                <exclude reference="fQm-7d-1wP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Izu-sP-Hma"/>
+                                <include reference="3AA-OJ-hGX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CvH-xS-Wr2"/>
+                                <include reference="VeT-kc-XfX"/>
+                                <include reference="K06-Nj-Qs5"/>
+                                <include reference="fQm-7d-1wP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="转场动画" id="iMO-oY-Iap"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="645.75"/>
+        </scene>
+        <!--转场动画2-->
+        <scene sceneID="k7I-iP-4Az">
+            <objects>
+                <viewController id="r22-F5-ftr" customClass="ViewController2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XAG-dU-liV"/>
+                        <viewControllerLayoutGuide type="bottom" id="z8t-uo-1E0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cVc-Sd-a5c">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVE-EK-51S">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fVE-EK-51S" firstAttribute="top" secondItem="XAG-dU-liV" secondAttribute="bottom" constant="136" id="GER-rG-kd5"/>
+                            <constraint firstItem="fVE-EK-51S" firstAttribute="centerX" secondItem="cVc-Sd-a5c" secondAttribute="centerX" id="Whx-tI-FZB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fVE-EK-51S"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="GER-rG-kd5"/>
+                                <exclude reference="Whx-tI-FZB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fVE-EK-51S"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="GER-rG-kd5"/>
+                                <include reference="Whx-tI-FZB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="转场动画2" id="eP6-AO-02m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeK-rd-cee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280.5" y="123.75"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="j5V-Do-G3I">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" id="Vd1-M9-Wcg" customClass="ViewController3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQh-Pg-3QF"/>
+                        <viewControllerLayoutGuide type="bottom" id="7lI-v6-2aC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8t8-nE-Wet">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS0-lC-TGX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.68060633849999996" green="0.8365743886" blue="0.141638446" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="dismiss"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="175" y="231" width="52" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="dismiss:" destination="Vd1-M9-Wcg" eventType="touchUpInside" id="kfz-ae-RLa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tS0-lC-TGX" firstAttribute="centerX" secondItem="8t8-nE-Wet" secondAttribute="centerX" id="NBY-ap-Bbr"/>
+                            <constraint firstItem="tS0-lC-TGX" firstAttribute="top" secondItem="pQh-Pg-3QF" secondAttribute="bottom" constant="211" id="jYw-oH-6n0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tS0-lC-TGX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NBY-ap-Bbr"/>
+                                <exclude reference="jYw-oH-6n0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tS0-lC-TGX"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NBY-ap-Bbr"/>
+                                <include reference="jYw-oH-6n0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfz-uD-boO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.5" y="786.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ktb-S2-WzJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ASZ-jc-gJD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="roj-P5-b0S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zEt-jT-i1b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbX-YI-LXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-667.5" y="482.25"/>
+        </scene>
+    </scenes>
+</document>
